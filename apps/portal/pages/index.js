@@ -1,5 +1,4 @@
-import styles from './index.module.scss';
-
+import styles from './index.module.scss'
 export function Index() {
   /*
    * Replace the elements below with your own.
@@ -13,7 +12,7 @@ export function Index() {
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
-              Welcome website 👋
+              Welcome portal 👋
             </h1>
           </div>
 
@@ -409,7 +408,6 @@ export function Index() {
         </div>
       </div>
     </div>
-  );
+  )
 }
-
-export default Index;
+export default Index
