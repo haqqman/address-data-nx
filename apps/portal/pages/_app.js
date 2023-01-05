@@ -22,10 +22,9 @@ function CustomApp({ Component, pageProps }) {
         {/* Favicon */}
         <link
           rel="shortcut icon"
-          href="../public/images/favicon.png"
+          href="../public/assets/favicon.png"
           type="image/x-icon"
         />
-
 
       </Head>
       <main className="app">
