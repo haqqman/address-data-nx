@@ -30,6 +30,21 @@ function CustomApp({ Component, pageProps }) {
       <main className="app">
         <Component {...pageProps} />
       </main>
+      
+  <Script src="../public/assets/js/jquery-3.3.1.min.js"></Script>
+	<Script src="../public/assets/js/jquery-migrate-3.0.0.min.js"></Script>
+	<Script src="../public/assets/js/mmenu.min.js"></Script>
+	<Script src="../public/assets/js/tippy.all.min.js"></Script>
+	<Script src="../public/assets/js/simplebar.min.js"></Script>
+	<Script src="../public/assets/js/bootstrap-slider.min.js"></Script>
+	<Script src="../public/assets/js/bootstrap-select.min.js"></Script>
+	<Script src="../public/assets/js/snackbar.js"></Script>
+	<Script src="../public/assets/js/clipboard.min.js"></Script>
+	<Script src="../public/assets/js/counterup.min.js"></Script>
+	<Script src="../public/assets/js/magnific-popup.min.js"></Script>
+	<Script src="../public/assets/js/slick.min.js"></Script>
+	<Script src="../public/assets/js/custom.js"></Script>
+
     </>
   )
 }

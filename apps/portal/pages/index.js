@@ -1,8 +1,3 @@
-import styles from './index.module.scss'
-import Head from 'next/head'
-import Script from 'next/script'
-
-
 export function Index() {
   return (
     <>
@@ -84,23 +79,6 @@ export function Index() {
   <div className="margin-top-70" />
   {/* Spacer / End*/}
   {/* Wrapper / End */}
-
-
-	 {/* Snackbar // documentation: https://www.polonel.com/snackbar/ */}
-		 {/* Snackbar for user status switcher */}
-	{/* <Script id="snackbar-inline-script">/*}
-    
-    {/* {		
-    $('#snackbar-user-status label').click(function () {
-			  Snackbar.show({
-        text: 'Your status has been changed!',
-        pos: 'bottom-center',
-        showAction: false,
-        actionText: "Dismiss",
-        duration: 3000,
-        textColor: '#fff',
-        backgroundColor: '#383838'} ) })} */}
-{/*	</Script> */}
     </>
   )
 }
