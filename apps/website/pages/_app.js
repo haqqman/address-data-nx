@@ -1,5 +1,7 @@
 import Head from 'next/head'
+import Layout from '../components/Layout'
 import './styles.css'
+
 function CustomApp({ Component, pageProps }) {
   return (
     <>
@@ -7,7 +9,9 @@ function CustomApp({ Component, pageProps }) {
         <title>Welcome to website!</title>
       </Head>
       <main className="app">
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </main>
     </>
   )
