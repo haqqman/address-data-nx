@@ -272,6 +272,15 @@ b {
 /*========================================
         03. PRE DEFINE CLASS CSS
 ==========================================*/
+.ptb-20 {
+  padding: 20px 0;
+}
+.ptb-30 {
+  padding: 30px 0;
+}
+.ptb-40 {
+  padding: 40px 0;
+}
 .ptb-50 {
   padding: 50px 0;
 }
@@ -473,6 +482,7 @@ a:hover {
   border-color: #ebebeb;
   padding: 0.75rem 0.85rem;
   height: calc(2.56em + 0.75rem + 2px);
+  width: 100%;
 }
 .form-control:focus {
   outline: none;
@@ -794,6 +804,7 @@ select.form-control.has-value {
       padding 0.3s ease-in-out;
     transition: border-bottom 0.3s ease-in-out, background 0.3s ease-in-out,
       padding 0.3s ease-in-out;
+      backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
   }
 }
@@ -963,11 +974,20 @@ select.form-control.has-value {
 }
 
 .gradient-overlay {
+  background: center top / cover no-repeat url('../images/hero-cover.jpg');
   position: relative;
   width: 100%;
 }
 
-.gradient-overlay:before {
+.second-gradient-overlay {
+  background: no-repeat center center / cover fixed
+    url('../images/hero-bg-3.jpg');
+  position: relative;
+  width: 100%;
+}
+
+.gradient-overlay:before,
+.second-gradient-overlay:before {
   position: absolute;
   content: '';
   background-image: linear-gradient(
@@ -1257,7 +1277,7 @@ select.form-control.has-value {
 }
 .single-promo-1 span {
   font-size: 35px;
-  background-image: url('../img/promo-icon-bg.svg');
+  background-image: url('../images/promo-icon-bg.svg');
   background-size: 150px;
   padding: 35px;
   background-repeat: no-repeat;
@@ -1311,6 +1331,7 @@ select.form-control.has-value {
   display: block;
   -webkit-animation: ripple-white 1s linear infinite;
   animation: ripple-white 1s linear infinite;
+  transition: 0.5s;
   -webkit-transition: 0.5s;
 }
 
@@ -1320,6 +1341,7 @@ select.form-control.has-value {
 .video-promo-content a.video-play-icon-without-bip:hover {
   -webkit-animation: ripple-white 1s linear infinite;
   animation: ripple-white 1s linear infinite;
+  transition: 0.5s;
   -webkit-transition: 0.5s;
   background-color: #9629e6;
 }
@@ -1585,7 +1607,7 @@ select.form-control.has-value {
 }
 
 .screenshot-frame {
-  background-image: url(../img/phone-frame2.png);
+  background-image: url(../images/phone-frame2.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: block;

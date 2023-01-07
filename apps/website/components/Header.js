@@ -1,18 +1,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import logo from '../public/assets/images/logo-light.svg'
 
-const Header = () => {
+export default function Header() {
   return (
     <div className="header">
       <nav className="navbar navbar-expand-lg fixed-top bg-transparent">
         <div className="container">
-          <Link className="navbar-brand" to="/">
-            {/* <Image
-              src="assets/images/logo-light.svg"
-              alt="Address Logo"
-              className="img-fluid"
-            /> */}
+          <Link className="navbar-brand" href="#">
+            <Image src={logo} alt="Address Logo" className="img-fluid" />
           </Link>
           <button
             className="navbar-toggler"
@@ -31,27 +28,29 @@ const Header = () => {
           >
             <ul className="navbar-nav ml-auto menu">
               <li>
-                <Link to="/index">About</Link>
+                <Link href="/">About</Link>
               </li>
               <li>
-                <Link to="/documentation">Documentation</Link>
+                <Link href="/documentation">Documentation</Link>
               </li>
               <li>
-                <Link to="/donate">Donate</Link>
+                <Link href="/donate">Donate</Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </li>
               <li>
                 <font color="white">
-                  <Link className="dropdown-toggle">Manage Account</Link>
+                  <a className="dropdown-toggle" href="#">
+                    Manage Account
+                  </a>
                 </font>
                 <ul className="sub-menu">
                   <li>
-                    <Link to="/access">Access</Link>
+                    <Link href="/access">Access</Link>
                   </li>
                   <li>
-                    <Link to="/create">Create</Link>
+                    <Link href="/create">Create</Link>
                   </li>
                 </ul>
               </li>
@@ -62,5 +61,3 @@ const Header = () => {
     </div>
   )
 }
-
-export default Header
