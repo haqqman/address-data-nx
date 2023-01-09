@@ -37,6 +37,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+ssh_key
+ssh_key.pub
 
 # Next.js
 .next
