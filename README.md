@@ -6,7 +6,7 @@
 
 ## Development server
 
-Run `nx serve website` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run `nx serve <project_name>` (or `npx nx serve <project_name>` if nx is not installed globally) for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
 ## Understand this workspace
 

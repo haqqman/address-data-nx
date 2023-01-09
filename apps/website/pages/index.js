@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-// import Loader from '../components/Loader'
 import curveShapeTop from '../public/assets/images/curve-shape-top.svg'
 import image10 from '../public/assets/images/image-10.png'
 import pamelaImg from '../public/assets/images/pamela.png'
@@ -8,22 +7,11 @@ import richmondImg from '../public/assets/images/richmond.png'
 import nenyeImg from '../public/assets/images/nenye.png'
 import omawumiImg from '../public/assets/images/omawumi.jpg'
 import viralFaq from '../public/assets/images/viral-faq.svg'
-import {
-  clientLogo1,
-  clientLogo2,
-  clientLogo3,
-  clientLogo4,
-  clientLogo5,
-  clientLogo6,
-  clientLogo7,
-  clientLogo8,
-} from '../public/assets/images/images_export'
+import Clients from '../components/Brands'
 
 export default function Index() {
   return (
     <>
-      {/* <Loader /> */}
-
       <div className="main">
         {/* Start Hero Section */}
         <section className="hero-equal-height ptb-100 gradient-overlay">
@@ -406,88 +394,11 @@ export default function Index() {
           </div>
         </section>
         {/*stories section end*/}
+
         {/*client section start*/}
-        <section className="client-section ptb-50">
-          <div className="container">
-            {/*clients logo start*/}
-            <div className="row justify-content-center">
-              <div className="col-md-8">
-                <div className="section-heading text-center mb-5">
-                  <h2>Trusted by Great Brands</h2>
-                  <p className="lead">
-                    Spotlight of brands leveraging on Address Data validation
-                    API.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="row align-items-center">
-              <div className="col-md-12">
-                <div className="overlay-opacity-gradient" />
-                <div className="owl-carousel owl-theme clients-carousel dot-indicator">
-                  <div className="item single-client">
-                    <Image
-                      src={clientLogo1}
-                      alt="client logo"
-                      className="img-fluid client-img"
-                    />
-                  </div>
-                  <div className="item single-client">
-                    <Image
-                      src={clientLogo2}
-                      alt="client logo"
-                      className="img-fluid client-img"
-                    />
-                  </div>
-                  <div className="item single-client">
-                    <Image
-                      src={clientLogo3}
-                      alt="client logo"
-                      className="img-fluid client-img"
-                    />
-                  </div>
-                  <div className="item single-client">
-                    <Image
-                      src={clientLogo4}
-                      alt="client logo"
-                      className="img-fluid client-img"
-                    />
-                  </div>
-                  <div className="item single-client">
-                    <Image
-                      src={clientLogo5}
-                      alt="client logo"
-                      className="img-fluid client-img"
-                    />
-                  </div>
-                  <div className="item single-client">
-                    <Image
-                      src={clientLogo6}
-                      alt="client logo"
-                      className="img-fluid client-img"
-                    />
-                  </div>
-                  <div className="item single-client">
-                    <Image
-                      src={clientLogo7}
-                      alt="client logo"
-                      className="img-fluid client-img"
-                    />
-                  </div>
-                  <div className="item single-client">
-                    <Image
-                      src={clientLogo8}
-                      alt="client logo"
-                      className="img-fluid client-img"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/*clients logo end*/}
-          </div>
-        </section>
-        {/*client section start*/}
+        <Clients lead="Spotlight of brands leveraging on Address Data validation API." />
+        {/*client section end*/}
+
         {/*faq section start*/}
         <div id="faq" className="gray-light-bg pt-100">
           <div className="container">
@@ -623,12 +534,20 @@ export default function Index() {
         </div>
         {/*faq section end*/}
         {/*download section start*/}
-        <section className="second-gradient-overlay ptb-100">
+        <section
+          className="gradient-overlay ptb-100"
+          style={{
+            background:
+              'url("assets/images/hero-bg-3.jpg")no-repeat center center / cover fixed',
+          }}
+        >
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-9 col-lg-8">
                 <div className="section-heading text-center">
-                  <h2 className="text-white">Get the Address Data</h2>
+                  <h2 className="text-white">
+                    Get the Address Data Mobile App
+                  </h2>
                   <div className="action-btns download-btn mt-4">
                     <a
                       href="#"
@@ -649,6 +568,7 @@ export default function Index() {
             </div>
           </div>
         </section>
+
         {/*download section end*/}
       </div>
       {/*body content wrap end*/}
