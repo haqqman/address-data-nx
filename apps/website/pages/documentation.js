@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Clients from '../components/Clients'
+import Clients from '../components/Brands'
 
 export default function Documentation() {
   return (

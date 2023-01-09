@@ -7,7 +7,7 @@ import richmondImg from '../public/assets/images/richmond.png'
 import nenyeImg from '../public/assets/images/nenye.png'
 import omawumiImg from '../public/assets/images/omawumi.jpg'
 import viralFaq from '../public/assets/images/viral-faq.svg'
-import Clients from '../components/Clients'
+import Clients from '../components/Brands'
 
 export default function Index() {
   return (

@@ -10,7 +10,7 @@ import {
   clientLogo8,
 } from '../public/assets/images/images_export'
 
-export default function Clients({ lead }) {
+export default function Brands({ lead }) {
   return (
     <>
       <div className="client-section ptb-100">
