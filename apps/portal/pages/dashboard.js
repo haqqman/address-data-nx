@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Header from '../components/header'
-import SideBar from '../components/sidebar'
+import Header from '../components/Header'
+import SideBar from '../components/Sidebar'
 export default function Dashboard({demoRes}){
     return(
         <>
