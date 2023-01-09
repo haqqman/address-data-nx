@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Clients from '../components/Clients'
 
-export default function Donate() {
+export default function Documentation() {
   return (
     <>
       <Head>
         {/* title */}
-        <title>Donate — Address Data</title>
+        <title>Documentation — Address Data</title>
       </Head>
 
       <div className="main">
@@ -25,9 +25,10 @@ export default function Donate() {
                   className="hero-content-left position-relative z-index text-center text-white"
                   style={{ marginTop: 50, marginBottom: '-50px' }}
                 >
-                  <h1 className="text-white">Donate</h1>
+                  <h1 className="text-white">Documentation</h1>
                   <p className="lead">
-                    Support in Helping to Sustain and Grow Address Data Platform
+                    Easy-to-use tool for single address verification &amp;
+                    validation.
                   </p>
                 </div>
               </div>
@@ -35,67 +36,13 @@ export default function Donate() {
           </div>
         </section>
         {/*End Hero Section */}
-        {/*pricing section start*/}
-        <section id="pricing" className="pricing ptb-30 gray-light-bg">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-md-9 col-lg-8">
-                <div className="section-heading mb-5 text-center">
-                  <h2>Why we encourage your donation?</h2>
-                  <p className="lead">
-                    Relying on volunteers to maintain Address Data Open
-                    isn&apos;t long term sustainable.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/*pricing section end*/}
-        {/* Start Donation Section */}
+        {/* Start Address Demo Tool */}
         <section id="contact" className="contact-us-section ptb-50">
           <div className="container">
             <div className="row justify-content-around">
-              <div className="col-md-5">
-                <div className="contact-us-content">
-                  <h2>Looking for a excellent Business idea?</h2>
-                  <p>
-                    We are working on Address Data to ensure accurate and
-                    up-to-date Address Data for platforms in Nigeria, which is
-                    essential for web-savvy organizations to function
-                    effectively. Currently, our efforts are funded primarily by
-                    Haqqman, a technology company based in Abuja. However,
-                    consistent commitments have been a challenge as developers
-                    often work on this project in their spare time
-                  </p>
-                  <p>
-                    No matter how small, every contribution helps us continue to
-                    improve and expand Address Data for the benefit of all
-                    platforms in need of efficient address validation in
-                    Nigeria. Thank you for considering supporting our efforts.
-                  </p>
-                  <hr className="my-5" />
-                  <h5>Volunteer</h5>
-                  <p>
-                    No matter how small, every code contribution helps us
-                    continue to improve and expand Address Data for the benefit
-                    of all platforms in need of efficient address validation in
-                    Nigeria. Thank you for considering supporting our efforts.
-                  </p>
-                  <a href="#" className="btn outline-btn align-items-center">
-                    Volunteer <span className="ti-arrow-right pl-2" />
-                  </a>
-                </div>
-              </div>
+              {/* Start Lookup Type */}
               <div className="col-md-6">
                 <div className="contact-us-form gray-light-bg rounded p-5">
-                  <p>
-                    If you believe in the importance of Open Source Address Data
-                    Platform and the work we do, please consider making a
-                    donation today. Your support will make a real difference in
-                    helping us to achieve our mission and make a positive impact
-                    in the world.
-                  </p>
                   <form
                     action="#"
                     method="POST"
@@ -104,24 +51,33 @@ export default function Donate() {
                     noValidate="novalidate"
                   >
                     <div className="form-row">
-                      <div className="col-6">
+                      <div className="col-12">
                         <div className="form-group">
-                          <input
-                            type="text"
+                          <label>Address Lookup Type</label>
+                          <select
+                            type="select"
                             className="form-control"
-                            name="first-name"
-                            placeholder="First Name"
+                            name="lookup-type"
                             required="required"
-                          />
+                          >
+                            <option value="value1">Freeform Component</option>
+                            <option value="value2">Select Component</option>
+                            <option value="value3">
+                              AutoComplete Component
+                            </option>
+                          </select>
                         </div>
                       </div>
-                      <div className="col-6">
+                    </div>
+                    <hr />
+                    <div className="form-row">
+                      <div className="col-12">
                         <div className="form-group">
                           <input
                             type="text"
                             className="form-control"
-                            name="last-name"
-                            placeholder="Last Name"
+                            name="address"
+                            placeholder="Address line 1"
                             required="required"
                           />
                         </div>
@@ -131,18 +87,30 @@ export default function Donate() {
                           <input
                             type="text"
                             className="form-control"
-                            name="name"
-                            placeholder="Organization Name"
+                            name="address"
+                            placeholder="Address line 2"
+                            required="required"
                           />
                         </div>
                       </div>
-                      <div className="col-12">
+                      <div className="col-6">
                         <div className="form-group">
                           <input
-                            type="email"
+                            type="text"
                             className="form-control"
-                            name="email-address"
-                            placeholder="Enter email address"
+                            name="state"
+                            placeholder="State"
+                            required="required"
+                          />
+                        </div>
+                      </div>
+                      <div className="col-6">
+                        <div className="form-group">
+                          <input
+                            type="text"
+                            className="form-control"
+                            name="city"
+                            placeholder="City"
                             required="required"
                           />
                         </div>
@@ -152,40 +120,39 @@ export default function Donate() {
                           <input
                             type="number"
                             className="form-control"
-                            name="phone-number"
-                            placeholder="Phone Number"
+                            name="zip-code"
+                            placeholder="000000"
                             required="required"
                           />
                         </div>
                       </div>
                       <div className="col-6">
-                        <div className="form-group">
-                          <input
-                            type="numeric"
-                            className="form-control"
-                            name="name"
-                            placeholder="How much do you want to donate?"
-                            required="required"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-sm-12 mt-3">
                         <button
                           type="submit"
                           className="btn solid-btn"
                           id="btnDonateWithPaystack"
                         >
-                          Donate
+                          View Results
                         </button>
                       </div>
                     </div>
                   </form>
                 </div>
               </div>
+              {/* End Lookup Type */}
+              <div className="col-md-5">
+                <div className="contact-us-content">
+                  <h2>Awaiting input.</h2>
+                  <p>
+                    Enter an address in the address form on the left column to
+                    see your results here.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-        {/*contact us section end*/}
+        {/* End Address Demo Tool */}
 
         {/*client section start*/}
         <Clients

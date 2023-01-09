@@ -1,15 +1,12 @@
 import Head from 'next/head'
-// import Loader from '../components/Loader'
 
 export default function Contact() {
   return (
     <>
       <Head>
         {/* title */}
-        <title>Contact &mdash; Address Data</title>
+        <title>Contact — Address Data</title>
       </Head>
-
-      {/* <Loader /> */}
 
       <div className="main">
         {/* Start Hero Section */}
