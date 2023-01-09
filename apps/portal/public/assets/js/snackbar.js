@@ -1,4 +1,4 @@
-/*!
+/*
  * Snackbar v0.1.10
  * http://polonel.com/Snackbar
  *
@@ -6,10 +6,10 @@
  * Released under the MIT license
  * https://github.com/polonel/Snackbar/blob/master/LICENSE
  */
-
 (function(root, factory) {
     'use strict';
 
+    // eslint-disable-next-line no-undef
     if (typeof define === 'function' && define.amd) {
         define([], function() {
             return (root.Snackbar = factory());
