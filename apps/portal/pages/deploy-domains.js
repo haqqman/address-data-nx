@@ -1,9 +1,14 @@
+import Head from 'next/head'
 import Link from 'next/link'
 import Header from '../components/Header.jsx'
 import SideBar from '../components/Sidebar.jsx'
 export default function DeployDomains() {
   return (
     <>
+      <Head>
+        {/* title */}
+        <title>Deploy Domains — Haqqman Form Endpoints.</title>
+      </Head>
       {/* Wrapper */}
       <div id="wrapper">
         {/* Import Header Component */}
