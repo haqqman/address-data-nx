@@ -1,12 +1,10 @@
 import Head from 'next/head'
+import PageTitle from '../components/PageTitle'
 
 export default function Contact() {
   return (
     <>
-      <Head>
-        {/* title */}
-        <title>Contact — Address Data</title>
-      </Head>
+      <PageTitle title="Contact" />
 
       <div className="main">
         {/* Start Hero Section */}

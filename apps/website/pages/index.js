@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import PageTitle from '../components/PageTitle'
 import curveShapeTop from '../public/assets/images/curve-shape-top.svg'
 import image10 from '../public/assets/images/image-10.png'
 import pamelaImg from '../public/assets/images/pamela.png'
@@ -7,11 +8,13 @@ import richmondImg from '../public/assets/images/richmond.png'
 import nenyeImg from '../public/assets/images/nenye.png'
 import omawumiImg from '../public/assets/images/omawumi.jpg'
 import viralFaq from '../public/assets/images/viral-faq.svg'
-import Clients from '../components/Brands'
+import Brands from '../components/Brands'
 
 export default function Index() {
   return (
     <>
+      <PageTitle title="About" />
+
       <div className="main">
         {/* Start Hero Section */}
         <section className="hero-equal-height ptb-100 gradient-overlay">
@@ -66,7 +69,8 @@ export default function Index() {
           </div>
         </section>
         {/* End Hero Section*/}
-        {/*promo section new start*/}
+
+        {/* Start Spotlight Section */}
         <section className="promo-new ptb-100">
           <div className="container">
             <div className="row justify-content-center">
@@ -127,8 +131,9 @@ export default function Index() {
             </div>
           </div>
         </section>
-        {/*promo section new end*/}
-        {/*feature section start*/}
+        {/*End Spotlight Section */}
+
+        {/* Start Feature Section */}
         <section
           id="features"
           className="feature-section ptb-100 gray-light-bg"
@@ -234,8 +239,9 @@ export default function Index() {
             </div>
           </div>
         </section>
-        {/*feature section end*/}
-        {/*stories section start*/}
+        {/* End Feature Section */}
+
+        {/* Start Stories Section */}
         <section id="reviews" className="testimonial-section ptb-100">
           <div className="container">
             <div className="row justify-content-center">
@@ -395,11 +401,11 @@ export default function Index() {
         </section>
         {/*stories section end*/}
 
-        {/*client section start*/}
-        <Clients lead="Spotlight of brands leveraging on Address Data validation API." />
-        {/*client section end*/}
+        {/* Start Brands Section */}
+        <Brands />
+        {/* End Brands Section */}
 
-        {/*faq section start*/}
+        {/* Start FAQ Section */}
         <div id="faq" className="gray-light-bg pt-100">
           <div className="container">
             <div className="row justify-content-around align-items-end">
@@ -532,8 +538,9 @@ export default function Index() {
             </div>
           </div>
         </div>
-        {/*faq section end*/}
-        {/*download section start*/}
+        {/* Start FAQ Section */}
+
+        {/* Start Download Section*/}
         <section
           className="gradient-overlay ptb-100"
           style={{
@@ -568,10 +575,10 @@ export default function Index() {
             </div>
           </div>
         </section>
+        {/* End Download Section */}
 
-        {/*download section end*/}
       </div>
-      {/*body content wrap end*/}
+      {/* End Body Content Wrap */}
     </>
   )
 }

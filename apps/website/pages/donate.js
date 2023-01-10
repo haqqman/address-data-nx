@@ -1,13 +1,11 @@
 import Head from 'next/head'
-import Clients from '../components/Brands'
+import PageTitle from '../components/PageTitle'
+import Brands from '../components/Brands'
 
 export default function Donate() {
   return (
     <>
-      <Head>
-        {/* title */}
-        <title>Donate — Address Data</title>
-      </Head>
+      <PageTitle title="Donate" />
 
       <div className="main">
         {/* Start Hero Section */}
@@ -187,12 +185,9 @@ export default function Donate() {
         </section>
         {/*contact us section end*/}
 
-        {/*client section start*/}
-        <Clients
-          lead='Rapidiously morph transparent internal or "organic" sources whereas resource sucking
-                e-business. Conveniently innovate compelling internal.'
-        />
-        {/*client section start*/}
+        {/* Start Brands Section */}
+        <Brands />
+        {/* End Brands Section */}
 
         {/* Start Start Mobile App Download Section */}
         <section

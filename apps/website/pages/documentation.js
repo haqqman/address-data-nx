@@ -1,13 +1,11 @@
 import Head from 'next/head'
-import Clients from '../components/Brands'
+import PageTitle from '../components/PageTitle'
+import Brands from '../components/Brands'
 
 export default function Documentation() {
   return (
     <>
-      <Head>
-        {/* title */}
-        <title>Documentation — Address Data</title>
-      </Head>
+      <PageTitle title="Documentation" />
 
       <div className="main">
         {/* Start Hero Section */}
@@ -154,12 +152,9 @@ export default function Documentation() {
         </section>
         {/* End Address Demo Tool */}
 
-        {/*client section start*/}
-        <Clients
-          lead='Rapidiously morph transparent internal or "organic" sources whereas resource sucking
-                e-business. Conveniently innovate compelling internal.'
-        />
-        {/*client section start*/}
+        {/* Start Brands Section */}
+        <Brands />
+        {/* End Brands Section */}
 
         {/* Start Start Mobile App Download Section */}
         <section

@@ -31,18 +31,14 @@ function CustomApp({ Component, pageProps }) {
         <meta name="author" content="Haqqman.Agency, agency@haqqman.com" />
         <meta name="designer" content="Abdulhaqq Sule" />
         {/* Meta Tags for Facebook, Twitter and LinkedIn */}
-        <meta property="og:site_name" content="" /> {/* website name */}
-        <meta property="og:site" content="" /> {/* website link */}
-        <meta property="og:title" content="" />{' '}
-        {/* title shown in the actual shared post */}
-        <meta property="og:description" content="" />{' '}
-        {/* description shown in the actual shared post */}
-        <meta property="og:image" content="" />{' '}
-        {/* image link, make sure it's jpg */}
-        <meta property="og:url" content="" />{' '}
-        {/* where do you want your post to link to */}
+        <meta property="og:site_name" content="" />
+        <meta property="og:site" content="" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="" />
         <meta property="og:type" content="article" />
-        {/*favicon icon*/}
+        {/* Favicon */}
         <link
           rel="icon"
           href="/assets/favicon.png"

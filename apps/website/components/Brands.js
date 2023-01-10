@@ -19,8 +19,8 @@ export default function Brands({ lead }) {
           <div className="row justify-content-center">
             <div className="col-md-8">
               <div className="section-heading text-center mb-5">
-                <h2>Trusted by Companies</h2>
-                <p className="lead">{lead}</p>
+                <h2>Earned Trust</h2>
+                <p className="lead">Taking the address world by storm for its genius, quality, and value, Address Data is relied on by some of the most respected brands in Nigeria</p>
               </div>
             </div>
           </div>
