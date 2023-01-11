@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import Header from '../components/Header'
-import SideBar from '../components/Sidebar'
+import Header from '../components/1Header'
+import SideBar from '../components/1Sidebar'
+
 export default function Dashboard() {
   return (
     <>

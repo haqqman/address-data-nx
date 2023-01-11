@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import SideBar from '../components/Sidebar.jsx'
-import Header from '../components/Header.jsx'
+import SideBar from '../components/1Sidebar.jsx'
+import Header from '../components/1Header.jsx'
 
 // import {MySnackbar} from '../components/inline-scripts.jsx'
 export default function ManageDomains() {
