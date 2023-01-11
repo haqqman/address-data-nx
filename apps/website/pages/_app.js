@@ -16,7 +16,6 @@ function CustomApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Home — Address Data</title>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
