@@ -1,4 +1,5 @@
-export function Index() {
+import Link from "next/link"
+export default function Index() {
   return (
     <>
 {/* Start Title Bar */}
@@ -12,7 +13,7 @@ export function Index() {
           <nav id="breadcrumbs" className="white">
             <ul>
               <li>
-                <a href="#">Portal</a>
+                <Link href="#">Portal</Link>
               </li>
               <li>Log In</li>
             </ul>
@@ -55,9 +56,9 @@ export function Index() {
                 required=""
               />
             </div>
-            <a href="#" className="forgot-password">
+            <Link href="#" className="forgot-password">
               <center>Reset Password</center>
-            </a>
+            </Link>
           </form>
           {/* Button */}
           <button
@@ -79,7 +80,8 @@ export function Index() {
   <div className="margin-top-70" />
   {/* Spacer / End*/}
   {/* Wrapper / End */}
+  
     </>
   )
 }
-export default Index
+

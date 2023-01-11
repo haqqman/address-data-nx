@@ -1,4 +1,4 @@
-/*!
+/*
  * Snackbar v0.1.10
  * http://polonel.com/Snackbar
  *
