@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Header from '../components/1Header.jsx'
-import SideBar from '../components/1Sidebar.jsx'
+import Header from '../components/Header.jsx'
+import SideBar from '../components/Sidebar.jsx'
 export default function DeployDomains() {
   return (
     <>
